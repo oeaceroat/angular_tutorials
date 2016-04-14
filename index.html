@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="store">
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    
+    <body ng-controller="StoreController as store">
+    <!--    <div ng-hide="store.product.soldOut" >-->
+        <ul class="list-group">
+        <li class="list-group-item" ng-repeat="product in store.products">
+            <h3> <product-title></product-title> </h3>
+            <product-panels></product-panels>
+    </ul>
+    </body>
+</html>    
